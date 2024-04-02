@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define N 8 // Define vector size
+#define N 1073741824// Define vector size
 
 // Function to perform 1-D stencil operation
 void stencil(float *X, float *Y, int n) {
@@ -39,14 +39,14 @@ int main() {
     stencil(X, Y, N);
     clock_t end_time = clock(); // End clock
 
-    printf("Resulting vector X:\n");
-    for (int i = 0; i < N; ++i) {
-        printf("%.2f ", X[i]);
-    }
+    // printf("Resulting vector X:\n");
+    // for (int i = 0; i < N; ++i) {
+    //     printf("%.2f ", X[i]);
+    // }
     printf("\n\n");
 
     printf("Resulting vector Y:\n");
-    for (int i = 0; i < N - 6; ++i) {
+    for (int i = N - 16; i < N - 6; ++i) {
         printf("%.2f ", Y[i]);
     }
     printf("\n");
