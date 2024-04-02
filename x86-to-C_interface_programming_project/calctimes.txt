@@ -1,0 +1,14 @@
+x86:
+
+2^20: 0.0143 seconds
+2^24: 0.2485 seconds
+2^30: 17.0843 seconds
+
+C:
+
+2^20: 0.0189 seconds
+2^24: 0.2485 seconds
+2^30: 21.9918 seconds
+
+
+In this case, the x86 version is always faster than the C, this may be due to how x86 assembly is operating closer to the hardware than C.
